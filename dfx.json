@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "ai_tutor_backend": {
+      "candid": "src/ai_tutor_backend/ai_tutor_backend.did",
+      "package": "ai_tutor_backend",
+      "type": "rust"
+    },
+    "ai_tutor_frontend": {
+      "dependencies": ["ai_tutor_backend"],
+      "source": ["src/ai_tutor_frontend/dist"],
+      "type": "assets",
+      "workspace": "ai_tutor_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
